@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #363062;
+  padding: 7px 2rem;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.navbar > ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar > ul > li > a:hover {
+  transition: all 0.3s ease;
+  color: yellow;
+}
+
+.hidden {
+  display: none;
+}
